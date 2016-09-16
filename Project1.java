@@ -17,7 +17,7 @@ public class Project1{
       
      // Read file
      String fileName = args[0];
-     File file = new File(fileName + ".txt");   
+     File file = new File(fileName);   
      readFile(fileName, file);
      
      // Count the number of strings in the file
