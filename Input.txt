@@ -7,3 +7,44 @@ gorge 18
 moss
 eno
 kyle
+moss
+hello 20
+hello
+no
+yes
+maybe 13
+maybe
+functions
+functions 56
+functions
+vanilla 45
+starbucks
+vanilla
+pencils 34
+pencils
+dragon 78
+eraser 56
+dragon
+eraser
+cat
+dog
+purse 34
+fish
+purse
+plant 93
+green
+yellow 5
+binder 2
+plant
+purple 1
+yellow
+binder
+anime 90
+purple
+ball
+pen
+anime
+ball 17
+ball
+button
+paper
