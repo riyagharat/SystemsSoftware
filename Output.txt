@@ -1,0 +1,50 @@
+Stored moss 25 at location 76
+Stored eno 15 at location 60
+ERROR fred not found
+ERROR riya not found
+Stored kyle 23 at location 121
+Stored gorge 18 at location 96
+moss found at location 76 with value 25
+eno found at location 60 with value 15
+kyle found at location 121 with value 23
+moss found at location 76 with value 25
+Stored hello 20 at location 108
+hello found at location 108 with value 20
+ERROR no not found
+ERROR yes not found
+Stored maybe 13 at location 103
+maybe found at location 103 with value 13
+ERROR functions not found
+Stored functions 56 at location 119
+functions found at location 119 with value 56
+Stored vanilla 45 at location 97
+ERROR starbucks not found
+vanilla found at location 97 with value 45
+Stored pencils 34 at location 98
+pencils found at location 98 with value 34
+Stored dragon 78 at location 125
+Stored eraser 56 at location 86
+dragon found at location 125 with value 78
+eraser found at location 86 with value 56
+ERROR cat not found
+ERROR dog not found
+Stored purse 34 at location 7
+ERROR fish not found
+purse found at location 7 with value 34
+Stored plant 93 at location 99
+ERROR green not found
+Stored yellow 5 at location 136
+Stored binder 2 at location 133
+plant found at location 99 with value 93
+Stored purple 1 at location 122
+yellow found at location 136 with value 5
+binder found at location 133 with value 2
+Stored anime 90 at location 81
+purple found at location 122 with value 1
+ERROR ball not found
+ERROR pen not found
+anime found at location 81 with value 90
+Stored ball 17 at location 123
+ball found at location 123 with value 17
+ERROR button not found
+ERROR paper not found
