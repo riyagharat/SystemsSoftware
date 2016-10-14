@@ -1,0 +1,43 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n00901846; Fri Oct 14 08:49:32 2016
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   	START	100
+002- 00100 01001B            	LDA	#27
+003- 00103 0F2032            	STA	X1
+004- 00106 010000            	LDA	#0
+005- 00109 0F202F            	STA	X2
+006- 0010C 6D0003            	LDS	#3	.INITIALIZE REGISTER S TO 3
+007- 0010F 75001E            	LDT	#30	.INITIALIZE REGISTER T TO 30
+008- 00112 072023            REVLP	LDX	X1
+009- 00115 03A026            	LDA	ALPHA,X	.LOAD WORD FROM ALPHA INTO REGISTER A
+010- 00118 072020            	LDX	X2
+011- 0011B 0FA03E            	STA	BETA,X	.STORE WORD IN BETA
+012- 0011E 032017            	LDA	X1
+013- 00121 1D0003            	SUB	#3
+014- 00124 0F2011            	STA	X1
+015- 00127 032011            	LDA	X2
+016- 0012A 190003            	ADD	#3
+017- 0012D 0F200B            	STA	X2
+018- 00130 A015              	COMPR	X,T	.COMPARE NEW X INDEX VALUE TO 30
+019- 00132 3B2FDD            	JLT	REVLP	.LOOP IF INDEX X GREATER THAN 30
+020- 00135 4F0000            	RSUB
+021- 00138                   X1	RESW	1
+022- 0013B                   X2	RESW	1
+023- 0013E 000007            ALPHA	WORD	7
+024- 00141 00000B            	WORD	11
+025- 00144 000004            	WORD	4
+026- 00147 000002            	WORD	2
+027- 0014A 000005            	WORD	5
+028- 0014D 000009            	WORD	9
+029- 00150 000003            	WORD	3
+030- 00153 00000D            	WORD	13
+031- 00156 00000E            	WORD	14
+032- 00159 000008            	WORD	8
+033- 0015C                   BETA	RESW	10
+034- 0017A                   	END		
