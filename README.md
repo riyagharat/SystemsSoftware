@@ -12,7 +12,8 @@ Intro to Systems Software Project 1
       Project1.java file: This file contains the program and the implementation of the program.
       
       Input.txt file: The input file consists of strings, some with numbers and some without numbers. The 
-      ones with numbers will be assigned to a spot within the array. The ones without numbers are searched for within the array.
+      ones with numbers will be assigned to a spot within the array. The ones without numbers are searched for 
+      within the array.
       
       Ouput.txt file: The output file is generated as a result of teh placement of the words from the 
       input file. Errors are also printed if any do occur.
