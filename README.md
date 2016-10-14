@@ -19,35 +19,35 @@ Intro to Systems Software Project 1
       
 Intro to Systems Software Project 2
 
-Date: 10/16/2016
+      Date: 10/16/2016
 
-The purpose of this project is to create a SIC or SIC/XE project that will have 10 integers
-initiaized in memory via WORD storage.
+      The purpose of this project is to create a SIC or SIC/XE project that will have 10 integers
+      initiaized in memory via WORD storage.
 
-project2 file: This file contains the SIC/XE program that reverses the order of the numbers
+      project2 file: This file contains the SIC/XE program that reverses the order of the numbers
 
-sicModified.doc: This file contains the modified sic.log which shows the original list of
-integers and the reversed list of integers.
+      sicModified.doc: This file contains the modified sic.log which shows the original list of
+      integers and the reversed list of integers.
 
-Procedure for running SIC/XE or SIC programs:
+      Procedure for running SIC/XE or SIC programs:
 
-The command SICASM must be entered first and then it will prompt you for the name of the file
+      The command SICASM must be entered first and then it will prompt you for the name of the file
 
-After entering the name of the file, command line will return saying that it created two
-files: project2. obj and project2.lst.
+      After entering the name of the file, command line will return saying that it created two
+      files: project2. obj and project2.lst.
 
-Then the command SICSIM must be entered. A prompt will appear asking you to A)ccept the files
-or R)ename the files.
-Enter 'R'
-Hit enter past loader until you get to DEVF1 and then enter project2.obj
-Continue hitting enter until the prompt appears again. 
+      Then the command SICSIM must be entered. A prompt will appear asking you to A)ccept the files
+      or R)ename the files.
+      Enter 'R'
+      Hit enter past loader until you get to DEVF1 and then enter project2.obj
+      Continue hitting enter until the prompt appears again. 
 
-Enter 'A', this will accept the program2.obj file
-Another prompt will be displayed.
+      Enter 'A', this will accept the program2.obj file
+      Another prompt will be displayed.
 
-Enter 'S', this will start the project2.obj file
-Enter 'R', this will run the project2.obj file. Continue entering 'R' until it says that
-it has attempted to read past the file.
+      Enter 'S', this will start the project2.obj file
+      Enter 'R', this will run the project2.obj file. Continue entering 'R' until it says that
+      it has attempted to read past the file.
 
-Enter 'D, 100-200', this will dump the data stored in memory and will show the integers
-entered initially and the integers reversed. 
+      Enter 'D, 100-200', this will dump the data stored in memory and will show the integers
+      entered initially and the integers reversed. 
