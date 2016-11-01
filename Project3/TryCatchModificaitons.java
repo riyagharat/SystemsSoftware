@@ -40,6 +40,14 @@ try{
           // DO SOMETHING WITH FORMAT FOUR
         }else if(temp.equals("RESW")){
           // DO SOMETHING WITH MULTIPLYING THE NEXT NUMBER BY 3 AND ADDING TO ADDRESS
+        }else if(formatThree.contains(temp)){
+
+        }else if(formatTwo.contains(temp)){
+
+        }else if(formatOne.contains(temp)){
+
+        }else if(restrictedList.contains(temp)){
+          
         }
       }
    }
@@ -47,7 +55,3 @@ try{
  }catch(IOException e){
    e.printStackTrace();
  }
-StringTokenizer st = new StringTokenizer("this is a test");
-     while (st.hasMoreTokens()) {
-         System.out.println(st.nextToken());
-     }
