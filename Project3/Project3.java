@@ -122,7 +122,8 @@ public class Project3{
      }
 
      ArrayList<LineObject> symbolTable = new ArrayList<>();
-
+     // CODE IS STILL NOT TAKING INTO ACCOUNT THE OPERAND WHICH COULD BE MISTAKEN
+     // FOR A LABEL RIGHT NOW
      String temp, text = "";
      int counter = 0;
      try{
@@ -169,8 +170,6 @@ public class Project3{
                  startVal = temp;
                  address = startVal;
                  counter++;
-               }else if(check == false){
-                 // REPORT AN ERROR OF HAVING AN INCORRECT MNEUMONIC
                }else{
                  if(mneumonic.equals("RESW")){
                     // MULTIPLY BY 3 AND ADD TO THE PREVIOUS ADDRESS
@@ -178,6 +177,8 @@ public class Project3{
                    //DON'T DO ANYTHING, ONLY ADD 3 TO PREVIOUS ADDRESS
                  }
                }
+             }else if(check == false){
+               // REPORT AN ERROR OF HAVING AN INCORRECT MNEUMONIC
              }else{
                // CHECK HERE IF THE LABEL EXISTS IN THE ARRAY, IF IT DOES,
                // REPORT AN ERROR
@@ -207,8 +208,8 @@ public class Project3{
     }
 
     // Calculate Addresses
-    static public void calculateAddress(){
-
+    static public int calculateAddress(int initialAddress, int newAddress){
+      
     }
 
    // Read Files
