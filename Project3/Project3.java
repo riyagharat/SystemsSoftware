@@ -121,6 +121,8 @@ public class Project3{
         values[i] = 0;
      }
 
+     ArrayList<LineObject> symbolTable = new ArrayList<>();
+
      String temp, text = "";
      int counter = 0;
      try{
@@ -128,31 +130,49 @@ public class Project3{
        while (input.hasNextLine()){
            text = input.nextLine();
            StringTokenizer st = new StringTokenizer(text);
+           String mneumonic = "";
+           String comment = "";
+           String startVal = "";
+           String label = "";
+           String address = "";
            while(st.hasMoreTokens()){
              temp = st.nextToken();
              if((temp.substring(0,1)).equals(".")){
+               comment = temp;
                // DO SOMETHING WITH COMMENT HERE
              }else if((temp.substring(0,1).equals("+"))){
+               mneumonic = temp;
                // DO SOMETHING WITH FORMAT FOUR
              }else if(temp.equals("RESW")){
+               mneumonic = temp;
                // DO SOMETHING WITH MULTIPLYING THE NEXT NUMBER BY 3 AND ADDING TO ADDRESS
              }else if(formatThree.contains(temp)){
-
+               mneumonic = temp;
              }else if(formatTwo.contains(temp)){
-
+               mneumonic = temp;
              }else if(formatOne.contains(temp)){
-
+               mneumonic = temp;
              }else if(restrictedList.contains(temp)){
-
+               mneumonic = temp;
              }else if(isInteger(temp)){
-               if(counter = 0){
+               if(counter == 0){
                  // SET THE startVal
+                 startVal = temp;
+                 address = startVal;
+                 counter++;
                }else{
-                 // CHECK THE OPERAND AS WELL, IF NOT RESW, DON'T DO ANYTHING, ONLY ADD 3
-                 // MULTIPLY BY 3 AND ADD TO THE PREVIOUS ADDRESS
+                 if(mneumonic.equals("RESW")){
+                    // MULTIPLY BY 3 AND ADD TO THE PREVIOUS ADDRESS
+                 }else{
+                   //DON'T DO ANYTHING, ONLY ADD 3 TO PREVIOUS ADDRESS
+                 }
                }
+             }else{
+               label = temp;
+               // SAVE THE LABEL HERE
              }
            }
+           symbolTable.add(new LineObject(label, mneumonic, comment, address));
         }
         input.close();
       }catch(IOException e){
@@ -290,27 +310,19 @@ public class Project3{
    static class LineObject{
       // The values on each line
       private String label;
-      private String plussign;
       private String mneumonic;
-      private String sign;
-      private String operand;
       private String comment;
       private String address;
-      private String startVal;
 
       // LineObject constructors
       public LineObject(){
       }
 
-      public LineObject(String label, String plussign, String mneumonic, String sign, String operand, String comment, String address, String startVal){
+      public LineObject(String label, String mneumonic, String comment, String address){
           this.label = label;
-          this.plussign = plussign;
           this.mneumonic = mneumonic;
-          this.sign = sign;
-          this.operand = operand;
           this.comment = comment;
           this.address = address;
-          this.startVal = startVal;
       }
 
       //Methods for the LineObject Class
@@ -320,20 +332,8 @@ public class Project3{
         return label;
       }
 
-      public String getPlussign(){
-        return plussign;
-      }
-
       public String getMneumonic(){
         return mneumonic;
-      }
-
-      public String getSign(){
-        return sign;
-      }
-
-      public String getOperand(){
-        return operand;
       }
 
       public String getComment(){
@@ -344,28 +344,13 @@ public class Project3{
         return address;
       }
 
-      public String getStartVal(){
-        return startVal;
-      }
       // Set Methods for LineObject Class
       public void setLabel(String newLabel){
         this.label = newLabel;
       }
 
-      public void setPlussign(String newPlussign){
-        this.plussign = newPlussign;
-      }
-
       public void setMneumonic(String newMneumonic){
         this.mneumonic = newMneumonic;
-      }
-
-      public void setSign(String newSign){
-        this.sign = newSign;
-      }
-
-      public void setOperand(String newOperand){
-        this.operand = newOperand;
       }
 
       public void setComment(String newComment){
@@ -376,16 +361,12 @@ public class Project3{
         this.address = newAddress;
       }
 
-      public void setStartVal(String newStartVal){
-        this.startVal = newStartVal;
-      }
-
       public boolean equals(Object obj){
          return true;
       }
       @Override
       public String toString(){
-        return getAddress() + getLabel() + getPlussign() + getMneumonic() + getSign() + getOperand() + getComment();
+        return getAddress() + getLabel() + getMneumonic() + getComment();
       }
    }
 }
