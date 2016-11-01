@@ -51,6 +51,7 @@ public class Project3{
      formatThree.add("TD");
      formatThree.add("TIX");
      formatThree.add("WD");
+     formatThree.add("WORD");
 
      // Create array with the format 2 instructions
      ArrayList<String> formatTwo = new ArrayList<>();
@@ -80,12 +81,13 @@ public class Project3{
      restrictedList.add("START");
      restrictedList.add("BASE");
      restrictedList.add("END");
+
      // The number of Strings in File 1
      int n = 0;
      // The first prime number greater than 2n
      int p = 0;
 
-     // NOTE: The file names must be entered without a .txt extension
+     // Note: The file names must be entered without a .txt extension
 
      // Read file
      String fileName = args[0];
@@ -119,37 +121,61 @@ public class Project3{
         values[i] = 0;
      }
 
-     String temp = "";
+     String temp, text = "";
      int counter = 0;
      try{
        Scanner input = new Scanner(new FileInputStream(file));
        while (input.hasNextLine()){
-           String text = input.nextLine();
-           if(counter == 0){
-             String readLabel = text.substring(0,9);
-             String readMneumonic = text.substring(10,18);
-             String readOperandSTART = text.substring(19,30);
-           }else{
-             String readLabel = text.substring(0,9);
-             String readMneumonic = text.substring(10,18);
-             String readOperand = text.substring(19,30);
-             String readComment = text.substring(31 - text.length());
-             counter++;
-           }
+           text = input.nextLine();
+           StringTokenizer st = new StringTokenizer(text);
+           while(st.hasMoreTokens()){
+             temp = st.nextToken();
+             if((temp.substring(0,1)).equals(".")){
+               // DO SOMETHING WITH COMMENT HERE
+             }else if((temp.substring(0,1).equals("+"))){
+               // DO SOMETHING WITH FORMAT FOUR
+             }else if(temp.equals("RESW")){
+               // DO SOMETHING WITH MULTIPLYING THE NEXT NUMBER BY 3 AND ADDING TO ADDRESS
+             }else if(formatThree.contains(temp)){
 
+             }else if(formatTwo.contains(temp)){
+
+             }else if(formatOne.contains(temp)){
+
+             }else if(restrictedList.contains(temp)){
+
+             }else if(isInteger(temp)){
+               if(counter = 0){
+                 // SET THE startVal
+               }else{
+                 // CHECK THE OPERAND AS WELL, IF NOT RESW, DON'T DO ANYTHING, ONLY ADD 3
+                 // MULTIPLY BY 3 AND ADD TO THE PREVIOUS ADDRESS
+               }
+             }
+           }
         }
         input.close();
       }catch(IOException e){
         e.printStackTrace();
       }
-
-
-
-   }
-
-     //
+  }
 
 //METHODS
+
+    // Check if Integer
+    static public boolean isInteger(String stringNumber){
+      try{
+        Integer.parseInt(stringNumber);
+        return true;
+      }catch(Exception e){
+        return false;
+      }
+    }
+
+    // Calculate Addresses
+    static public void calculateAddress(){
+
+    }
 
    // Read Files
   static public void readFile(String filename, File file){
