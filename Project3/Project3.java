@@ -135,6 +135,7 @@ public class Project3{
            String startVal = "";
            String label = "";
            String address = "";
+           boolean check = false;
            while(st.hasMoreTokens()){
              temp = st.nextToken();
              if((temp.substring(0,1)).equals(".")){
@@ -147,12 +148,20 @@ public class Project3{
                mneumonic = temp;
                // DO SOMETHING WITH MULTIPLYING THE NEXT NUMBER BY 3 AND ADDING TO ADDRESS
              }else if(formatThree.contains(temp)){
+               // BOOLEAN VARIABLE TO CONFIRM AN APPROPRIATE MNEUMONIC
+               check = true;
                mneumonic = temp;
              }else if(formatTwo.contains(temp)){
+               // BOOLEAN VARIABLE TO CONFIRM AN APPROPRIATE MNEUMONIC
+               check = true;
                mneumonic = temp;
              }else if(formatOne.contains(temp)){
+               // BOOLEAN VARIABLE TO CONFIRM AN APPROPRIATE MNEUMONIC
+               check = true;
                mneumonic = temp;
              }else if(restrictedList.contains(temp)){
+               // BOOLEAN VARIABLE TO CONFIRM AN APPROPRIATE MNEUMONIC
+               check = true;
                mneumonic = temp;
              }else if(isInteger(temp)){
                if(counter == 0){
@@ -160,6 +169,8 @@ public class Project3{
                  startVal = temp;
                  address = startVal;
                  counter++;
+               }else if(check == false){
+                 // REPORT AN ERROR OF HAVING AN INCORRECT MNEUMONIC
                }else{
                  if(mneumonic.equals("RESW")){
                     // MULTIPLY BY 3 AND ADD TO THE PREVIOUS ADDRESS
@@ -168,7 +179,10 @@ public class Project3{
                  }
                }
              }else{
+               // CHECK HERE IF THE LABEL EXISTS IN THE ARRAY, IF IT DOES,
+               // REPORT AN ERROR
                label = temp;
+               // HASH THE LABEL AND STORE IT IN AN ARRAY
                // SAVE THE LABEL HERE
              }
            }
