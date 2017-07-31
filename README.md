@@ -4,6 +4,7 @@ Collection of Java, SIC, SIC/XE programs written in my Introduction to System So
 In this file I will outline the contents of each Project file as well as the purpose of the project.
 
 Intro to Systems Software Project 1
+
       Date: 09/22/2016
       
       The purpose of this project is to implement the symbol table that will be used by the assembler during pass1 
