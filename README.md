@@ -62,9 +62,10 @@ Intro to Systems Software Project 3
       The purpose of this project is to implement pass 1 of the assembler. Pass 1 should construct the symbol table, the
       addresses associated with each instruction, addresses of each label.
 
-      Project3.java file: This file contains the program and the implementation of the program. This file will read the 
-      input file and create appropriate arrayLists from it and eventually create the symbol table. 
+      Project3.java file: This file contains the program and the implementation of the program. This file will
+      read the input file and create appropriate arrayLists from it and eventually create the symbol table. 
 
-      Input.txt file: The input file is determined by the user. The Project3.java file will read the file from the command line. 
+      Input.txt file: The input file is determined by the user. The Project3.java file will read the file from the
+      command line. 
 
       Makefile file: The makefile compiles the Project3 file and also runs the other file as an input.
