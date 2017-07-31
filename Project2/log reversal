@@ -1,0 +1,86 @@
+SIC SIMULATOR V1.6
+File names are:
+loader                                 
+DEVF1                                  
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+r
+loader                                 
+DEVF1                                  
+project2.obj
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+File names are:
+loader                                 
+project2.obj                           
+DEVF2                                  
+DEVF3                                  
+DEV04                                  
+DEV05                                  
+DEV06                                  
+COMMAND: A(CCEPT file names, R(ENAME 1 or more files
+a
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+s
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=00005C
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=00002F
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=000056
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=00003F
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+  1000 INSTRUCTIONS EXECUTED
+P=000130
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+r
+ATTEMPT TO READ DEVF1 PAST END OF FILE
+P=000053
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d, 100-200
+
+0100 01001B0F 20320100 000F202F 6D000375
+0110 001E0720 2303A026 0720200F A03E0320
+0120 171D0003 0F201103 20111900 030F200B
+0130 A0153B2F DD4F0000 FFFFFA00 00210000         INPUT(7, 11, 4, 2, 5, 9, 3, 13, 14, 8)
+0140 0700000B 00000400 00020000 05000009
+0150 00000300 000D0000 0E000008 00000800         REVERSED(8, 14, 13, 3, 9, 5, 2, 4, 11, 7)
+0160 000E0000 0D000003 00000900 00050000
+0170 02000004 00000B00 00070000 1EFFFFFF
+0180 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+0190 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01A0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01B0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01C0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01D0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01E0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01F0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+0200 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+q
